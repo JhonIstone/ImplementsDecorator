@@ -146,7 +146,7 @@ public class MainScream extends JFrame implements ActionListener{
             URLClassLoader ucl = new URLClassLoader(jars);
             try {
                 PizzaComponent[] pizzas = new PizzaComponent[toMake.length];
-                pizzas[toMake.length-1] = (PizzaComponent) Class.forName("decorators" + "." + toMake[toMake.length-1], true, ucl).getDeclaredConstructor(PizzaComponent.class).newInstance(new PizzaSimples());
+                pizzas[toMake.length-1] = (PizzaComponent) Class.forName("decorators" + "." + toMake[toMake.length-1], true, ucl).getDeclaredConstructor(PizzaComponent.class).newInstance(new PizzaBasica());
                 for(int i = toMake.length-2; i >= 0 ; i--) {
                     pizzas[i] = (PizzaComponent) Class.forName("decorators" + "." + toMake[i], true, ucl).getDeclaredConstructor(PizzaComponent.class).newInstance(pizzas[i+1]);
                 }

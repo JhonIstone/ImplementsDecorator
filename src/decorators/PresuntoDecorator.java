@@ -13,7 +13,7 @@ public class PresuntoDecorator extends PizzaDecorator{
     public void preparar() {
         // TODO Auto-generated method stub
         decorated.preparar();
-        System.out.println("Colocando presunto");
+        System.out.println("Adicionando presunto");
     }
     
 }

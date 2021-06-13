@@ -2,12 +2,12 @@ package main;
 
 import interfaces.PizzaComponent;
 
-public class PizzaSimples implements PizzaComponent{
+public class PizzaBasica implements PizzaComponent{
 
     @Override
     public void preparar() {
         // TODO Auto-generated method stub
-        System.out.println("Preparando massa + molho + queijo");
+        System.out.println("Preparando a massa + molho + queijo");
     }
     
 }

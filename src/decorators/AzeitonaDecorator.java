@@ -13,7 +13,7 @@ public class AzeitonaDecorator extends PizzaDecorator{
     public void preparar() {
         // TODO Auto-generated method stub
         decorated.preparar();
-        System.out.println("Colocando Azeitona");
+        System.out.println("Adicionando Azeitona");
     }
     
 }
